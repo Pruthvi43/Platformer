@@ -1,6 +1,12 @@
 res://tile_map.tscn
-res://Player.gd
-res://player.tscn
 res://player.gd
-res://tilemap.tscn
+res://player.tscn
 res://game.tscn
+res://Player.gd
+res://finish_line.tscn
+res://finish_line.gd
+res://winning_screen.tscn
+res://game.gd
+res://winning_screen.gd
+res://label.gd
+res://timer.gd

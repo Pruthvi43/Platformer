@@ -1,5 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747915473
-c66ef21ba861b62646f2de5db79cb04390ed45ef.png::CompressedTexture2D::3391133511980787037::1747915436::1747915474::1::::<><>::
-icon.svg::CompressedTexture2D::2027430069811281837::1747915436::1747915474::1::::<><>::
-tilemap.tscn::PackedScene::6534501740631667824::1747915436::0::1::::<><>::uid://bokxqdmd03h8p::::res://c66ef21ba861b62646f2de5db79cb04390ed45ef.png
+::res://::1748470424
+c66ef21ba861b62646f2de5db79cb04390ed45ef.png::CompressedTexture2D::3391133511980787037::1748394071::1748394071::1::::<><>::
+game.tscn::PackedScene::8269837279332178874::1748470161::0::1::::<><>::uid://dwbs5rs4jkrvl::::res://tile_map.tscn<>uid://d386jvqgenvs7::::res://player.tscn
+icon.svg::CompressedTexture2D::2027430069811281837::1748394071::1748394071::1::::<><>::
+player.gd::GDScript::-1::1748470377::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::9194573565734804416::1748470377::0::1::::<><>::res://player.gd<>uid://35dqhpr14acb::::res://icon.svg
+tilemap.tscn::PackedScene::6534501740631667824::1748394071::0::1::::<><>::uid://bokxqdmd03h8p::::res://c66ef21ba861b62646f2de5db79cb04390ed45ef.png
+tile_map.tscn::PackedScene::8706628390590518297::1748470161::0::1::::<><>::uid://bokxqdmd03h8p::::res://c66ef21ba861b62646f2de5db79cb04390ed45ef.png

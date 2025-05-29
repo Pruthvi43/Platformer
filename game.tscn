@@ -1,11 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://dp28ant57u5t3"]
+[gd_scene load_steps=6 format=3 uid="uid://dp28ant57u5t3"]
 
+[ext_resource type="Script" path="res://game.gd" id="1_rqawq"]
 [ext_resource type="PackedScene" uid="uid://dwbs5rs4jkrvl" path="res://tile_map.tscn" id="1_vhg2p"]
 [ext_resource type="PackedScene" uid="uid://d386jvqgenvs7" path="res://player.tscn" id="2_v4c81"]
+[ext_resource type="PackedScene" uid="uid://705jmkuvwmoj" path="res://finish_line.tscn" id="3_4h0gt"]
+[ext_resource type="Script" path="res://timer.gd" id="5_qcsw0"]
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_rqawq")
+
+[node name="Player" parent="." instance=ExtResource("2_v4c81")]
+position = Vector2(49, 95)
 
 [node name="TileMap" parent="." instance=ExtResource("1_vhg2p")]
 
-[node name="Player" parent="." instance=ExtResource("2_v4c81")]
-position = Vector2(34, 73)
+[node name="Area2D" parent="." instance=ExtResource("3_4h0gt")]
+position = Vector2(1043, 624)
+
+[node name="Timer" type="Timer" parent="Area2D"]
+wait_time = 0.001
+autostart = true
+script = ExtResource("5_qcsw0")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

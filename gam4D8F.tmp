@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp28ant57u5t3"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_rqawq"]
+[ext_resource type="PackedScene" uid="uid://dwbs5rs4jkrvl" path="res://tile_map.tscn" id="1_vhg2p"]
+[ext_resource type="PackedScene" uid="uid://d386jvqgenvs7" path="res://player.tscn" id="2_v4c81"]
+[ext_resource type="PackedScene" uid="uid://705jmkuvwmoj" path="res://finish_line.tscn" id="3_4h0gt"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_rqawq")
+
+[node name="Player" parent="." instance=ExtResource("2_v4c81")]
+position = Vector2(49, 95)
+
+[node name="TileMap" parent="." instance=ExtResource("1_vhg2p")]
+
+[node name="Area2D" parent="." instance=ExtResource("3_4h0gt")]
+position = Vector2(1045, 624)
